@@ -1,5 +1,5 @@
 <p>
-<img src="images/Coronavirus.jpg" width="900" height="585">
+<img src="images/markus-winkler--fRAIQHKcc0-unsplash.jpg" width="999.75" height="666.5">
 </p>
 
 # Helping Amazon Reviewers Write More Helpfully
