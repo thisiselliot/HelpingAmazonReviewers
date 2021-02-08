@@ -1,5 +1,6 @@
 <p>
 <img src="images/markus-winkler--fRAIQHKcc0-unsplash.jpg" width="999.75" height="666.5">
+Photo by [Markus Winkler](https://unsplash.com/photos/-fRAIQHKcc0) on Unsplash
 </p>
 
 # Helping Amazon Reviewers Write More Helpfully
