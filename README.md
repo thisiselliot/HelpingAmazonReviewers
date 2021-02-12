@@ -41,6 +41,7 @@ The goal of this project is to predict a review's likely helpfulness rating rela
     3. Fit and predict on classifiers
 
 *\*[download](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) and expand zipped datasets into "data" subdirectory (**not** included with repo) and replace "filename" variable with dataset filename*
+
 <br>
 
 ## Results
