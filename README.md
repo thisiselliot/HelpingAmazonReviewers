@@ -38,7 +38,15 @@ The goal of this project is to predict a review's likely helpfulness rating rela
 <br>
 
 ## Results
-\[Model evaluation]
+RANDOM FOREST
+- Training Accuracy:	0.6013 	Testing Accuracy:	0.604
+- Training Recall:	0.7055 	Testing Recall:		0.6951
+- Training F1:		0.6365 	Testing F1:		0.6383
+
+XGBOOST
+- Training Accuracy:	0.837 	Testing Accuracy:	0.6135
+- Training Recall:	0.8415 	Testing Recall:		0.6049
+- Training F1:		0.8363 	Testing F1:		0.6114
 
 <br>
 
