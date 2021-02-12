@@ -24,6 +24,8 @@ Amazon maintains a [publicly accessible database](https://s3.amazonaws.com/amazo
 
 The goal of this project is to predict a review's likely helpfulness rating relative to the median (posed as a binary classification: un/helpful). Lexical features are tf-idf vectorised to reduce sparcity and augmented by textual and contextual feature extraction. Supervised learning models, incluing random forests and XGBoost, are implemented as binary classifiers and evaluated for accuracy, recall, and f1-scores.
 
+Stakeholders like Amazon can implement real-time predictive review helpfulness modelling for product review writers to benefit from greater perceived helpfulness. 
+
 <br>
 
 ## Process
