@@ -7,10 +7,8 @@
 **Author**: Elliot Macy
 
 <br>
-<br>
 
 ## Overview
-
 Amazon, the world’s largest online shopping platform, depends on user generated product reviews for building consumer trust. Amazon promotes helpful reviews by inviting users to tag reviews that they find are helpful (or not helpful). Furthermore, every review lists the number of users who tagged it as ‘helpful’ and, by default, Amazon sorts product reviews by the number of ‘helpful’ tags they receive.
 
 Amazon maintains a [publicly accessible database](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) with twenty years of product reviews, by product category, ranging from 1996 through 2015. The dataset includes review texts as well as metadata (star rating, product id, review date, helpful votes, etc.).
@@ -60,7 +58,6 @@ Please contact **Elliot Macy (elimacy@gmail.com)**.
 <br>
 
 ## Repository Structure
-
 Description of the structure of the repository and its contents:
 
 ```
@@ -70,5 +67,4 @@ Description of the structure of the repository and its contents:
 ├── eda.ipynb                           <- visualization and analysis
 ├── modelling.ipynb                     <- tf-idf classification models
 └── README.md                           <- repo overview (what you are reading!)👀
-
 ```
