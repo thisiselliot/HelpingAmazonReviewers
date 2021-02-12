@@ -7,8 +7,6 @@ Photo by <a href="https://unsplash.com/@christianw">Christian Wiediger</a> on <a
 **Author**: Elliot Macy
 
 
-## Overview
-
 Amazon maintains a [publicly accessible database](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) with twenty years of product reviews, by product category, ranging from 1996 through 2015. The dataset includes review texts as well as metadata (star rating, product id, review date, helpful votes, etc.).
 
 The goal of this project is to predict a review's likely helpfulness rating relative to the median (posed as a binary classification: un/helpful). Lexical features are tf-idf vectorised to reduce sparcity and augmented by textual and contextual feature extraction. Supervised learning models, incluing random forests and XGBoost, are implemented as binary classifiers and evaluated for accuracy, recall, and f1-scores.
