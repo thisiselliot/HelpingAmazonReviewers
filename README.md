@@ -1,12 +1,22 @@
 <p>
   <img src="images/christian-wiediger-rymh7EZPqRs-unsplash.jpg">
+  <br>
   Photo by <a href="https://unsplash.com/@christianw">Christian Wiediger</a> on <a href="https://unsplash.com/">Unsplash</a>
 </p>
 
 # Helping Amazon Reviewers Write More Helpfully
 **Author**: Elliot Macy
 
-<br>
+<p align="center">
+  Helpful reviews' 25 most frequent words:
+  <br>
+  <img src="images/helpful_freqdist.png" width = 600>
+  <br>
+  <br>
+  Unelpful reviews' 25 most frequent words:
+  <br>
+  <img src="images/unhelpful_freqdist.png" width = 600>
+</p>
 
 ## Overview
 Amazon, the world’s largest online shopping platform, depends on user generated product reviews for building consumer trust. Amazon promotes helpful reviews by inviting users to tag reviews that they find are helpful (or not helpful). Furthermore, every review lists the number of users who tagged it as ‘helpful’ and, by default, Amazon sorts product reviews by the number of ‘helpful’ tags they receive.
