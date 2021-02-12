@@ -1,7 +1,6 @@
 <p>
   <img src="images/christian-wiediger-rymh7EZPqRs-unsplash.jpg">
   <br>
-  Photo by <a href="https://unsplash.com/@christianw">Christian Wiediger</a> on <a href="https://unsplash.com/">Unsplash</a>
 </p>
 
 # Helping Amazon Reviewers Write More Helpfully
@@ -75,7 +74,6 @@ Please contact **Elliot Macy (elimacy@gmail.com)**.
 
 ## Repository Structure
 Description of the structure of the repository and its contents:
-
 ```
 ├── pickles                             <- (folder) gridsearch hyperparameters
 ├── images                              <- (folder) graphs, figures, and stock images
@@ -84,3 +82,7 @@ Description of the structure of the repository and its contents:
 ├── modelling.ipynb                     <- tf-idf classification models
 └── README.md                           <- repo overview (what you are reading!)👀
 ```
+
+<br>
+
+*Photo credit: <a href="https://unsplash.com/@christianw">Christian Wiediger</a> via <a href="https://unsplash.com/">Unsplash</a>*
