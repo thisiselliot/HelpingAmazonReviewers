@@ -27,7 +27,7 @@ The goal of this project is to predict a review's likely helpfulness rating rela
 <br>
 
 ## Process
-1. Data preperation*
+1. Data preparation*
     1. Drop junk data, set review date to datetime object, and define target label as helpful/unhelpful ratio
     2. Tokenize text, drop stopwords, and normalize vocabulary for TF-IDF
     3. Extract textual and con-textual features
