@@ -2,7 +2,7 @@
 **Author**: Elliot Macy
 
 <p>
-<img src="images/markus-winkler--fRAIQHKcc0-unsplash.jpg" width="999.75" height="666.5">
+<img src="images/christian-wiediger-rymh7EZPqRs-unsplash.jpg">
 Photo by <a href="https://unsplash.com/@christianw">Christian Wiediger</a> on <a href="https://unsplash.com/">Unsplash</a>
 </p>
 
