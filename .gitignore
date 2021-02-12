@@ -130,3 +130,6 @@ dmypy.json
 
 # macOS Files
 .DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
