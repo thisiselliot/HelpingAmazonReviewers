@@ -18,9 +18,11 @@ For any additional questions, please contact **Elliot Macy (elimacy@gmail.com)**
 Description of the structure of the repository and its contents:
 
 ```
-├── README.md                           <- The top-level README for reviewers of this project
-├── luggage_reviews.ipynb               <- Narrative documentation of analysis in Jupyter notebook
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── pickles                             <- (folder) gridsearch hyperparameters
+├── images                              <- (folder) graphs, figures, and stock images
+├── data_processing.ipynb               <- cleaning and feature extraction
+├── eda.ipynb                           <- visualization and analysis
+├── modelling.ipynb                     <- tf-idf classification models
+└── README.md                           <- repo overview (what you are reading!)👀
 
 ```
