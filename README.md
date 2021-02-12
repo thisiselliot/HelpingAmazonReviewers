@@ -33,7 +33,7 @@ The goal of this project is to predict a review's likely helpfulness rating rela
     2. Optimize random forest and XGBoost classifiers with gridsearch
     3. Fit and predict on classifiers
 
-*download zipped files and expand into "data" subdirectory (needs to be created) and replace "filename" variable with filename (sans extension)
+*\*download zipped files and expand into "data" subdirectory (needs to be created) and replace "filename" variable with filename (sans extension)*
 <br>
 
 ## Results
