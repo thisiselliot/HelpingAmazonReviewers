@@ -18,7 +18,7 @@ The goal of this project is to predict a review's likely helpfulness rating rela
 <br>
 
 ## Process
-1. Data preperation
+1. Data preperation*
     1. Drop junk data, set review date to datetime object, and define target label as helpful/unhelpful ratio
     2. Tokenize text, drop stopwords, and normalize vocabulary for TF-IDF
     3. Extract textual and con-textual features
@@ -33,6 +33,7 @@ The goal of this project is to predict a review's likely helpfulness rating rela
     2. Optimize random forest and XGBoost classifiers with gridsearch
     3. Fit and predict on classifiers
 
+*download zipped files and expand into "data" subdirectory (needs to be created) and replace "filename" variable with filename (sans extension)
 <br>
 
 ## Results
@@ -49,6 +50,13 @@ Training         | Testing
 Accuracy: 0.8370 | Accuracy: 0.6135
 Recall: 0.8415   | Recall: 0.6049
 F1: 0.8363       | F1: 0.6114
+
+<br>
+
+## Next Steps
+Words depend on other words for meaning. Bigrams (or n-grams) allow random forests and XGBoost to partially capture this dependence for pairs (or larger sets) of adjoining words, but words at one end of a sentence can depend just as much on words at the other end for meaning as those in closer proximity.
+
+Bidirectional LSTM recurrent neural networks with self attention are promising options for next steps better suited to the task of classifying language in order to predict a review's helpfulness.
 
 <br>
 
