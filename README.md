@@ -3,9 +3,11 @@
 
 <p>
 <img src="images/markus-winkler--fRAIQHKcc0-unsplash.jpg" width="999.75" height="666.5">
+Photo by <a href="https://unsplash.com/@christianw">Christian Wiediger</a> on <a href="https://unsplash.com/">Unsplash</a>
 </p>
 
 ## Overview
+
 The goal of this project is to investigate Amazon product review helpfulness ratings and make related predictions in regard to natural language processing. The data is accessed [here](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt). Machine learning and deep learning methods such as random forests, LSTM networks, GRU networks, and bidirectional RNNs are implemented and evaluated.
 
 ## For More Information
