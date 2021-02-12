@@ -24,9 +24,7 @@ The goal of this project is to predict a review's likely helpfulness rating rela
     3. Extract textual and con-textual features
 
 2. EDA
-    1. \[Step 1]
-    2. \[Step 2]
-    3. \[Step 3]
+    1. Visualize helpful/unhelpful vocabularies' word frequencies
 
 3. Modelling
     1. Combine TF-IDF vectors with extracted features and split train and test sets
