@@ -6,25 +6,19 @@
 # Helping Amazon Reviewers Write More Helpfully
 **Author**: Elliot Macy
 
-<p align="center">
-  Helpful reviews' 25 most frequent words:
-  <br>
-  <img src="images/helpful_freqdist.png" width = 600>
-  <br>
-  <br>
-  Unelpful reviews' 25 most frequent words:
-  <br>
-  <img src="images/unhelpful_freqdist.png" width = 600>
-</p>
 
 ## Overview
-Amazon, the world’s largest online shopping platform, depends on user generated product reviews for building consumer trust. Amazon promotes helpful reviews by inviting users to tag reviews that they find are helpful (or not helpful). Furthermore, every review lists the number of users who tagged it as ‘helpful’ and, by default, Amazon sorts product reviews by the number of ‘helpful’ tags they receive.
+Online retailers like Amazon solicit product reviews from users and rank the reviews according to helpfulness. It is up to users to manually asses review helpfulness, however, by voting whether they find a review helpful or unhelpful. Newly written reviews cannot, therefore, be ranked immediately, and low-traffic reviews may never be ranked if users do not vote on them.
 
-Amazon maintains a [publicly accessible database](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) with twenty years of product reviews, by product category, ranging from 1996 through 2015. The dataset includes review texts as well as metadata (star rating, product id, review date, helpful votes, etc.).
+This project asks what if, instead, Amazon could assess review helpfulness automatically. To answer that question, I investigate automatic product review helpfulness prediction using machine learning methods, including random forest, XGBoost, and support vector machine classification models.
 
-The goal of this project is to predict a review's likely helpfulness rating relative to the median (posed as a binary classification: un/helpful). Lexical features are tf-idf vectorised to reduce sparcity and augmented by textual and contextual feature extraction. Supervised learning models, incluing random forests and XGBoost, are implemented as binary classifiers and evaluated for accuracy, recall, and f1-scores.
+## Task definition
+Given a set of reviews for a particular product category, classify the reviews according to their helpfulness, with helpfulness defined as whether a review’s ratio of helpful to unhelpful votes is above or below the median ratio for all of that product category’s reviews.
 
-Stakeholders like Amazon can implement real-time predictive review helpfulness modelling for product review writers to benefit from greater perceived helpfulness. 
+<br>
+
+## Data
+Amazon maintains a [publicly accessible database](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) with twenty years of product reviews, by product category, ranging from 1996 through 2015. The dataset includes review texts as well as metadata (star rating, product id, review date, helpful votes, etc.). The figures and results shown here use reviews for products in the "luggage" category. Changing product categories has a negligible impact.
 
 <br>
 
@@ -48,18 +42,28 @@ Stakeholders like Amazon can implement real-time predictive review helpfulness m
 
 ## Results
 **RANDOM FOREST**
-Training         | Testing
----------------- | -------------
-Accuracy: 0.6013 | Accuracy: 0.6040
-Recall: 0.7055   | Recall: 0.6951
-F1: 0.6365       | F1: 0.6383
+Training          | Testing
+----------------- | -------------
+Accuracy:  0.6306 | Accuracy:  0.6294
+Precision: 0.5933 | Precision: 0.5958
+Recall:    0.7688 | Recall:    0.7714
+F1:        0.6697 | F1:        0.6723
 
 **XGBOOST**
-Training         | Testing
----------------- | -------------
-Accuracy: 0.8370 | Accuracy: 0.6135
-Recall: 0.8415   | Recall: 0.6049
-F1: 0.8363       | F1: 0.6114
+Training          | Testing
+----------------- | -------------
+Accuracy:  0.7048 | Accuracy:  0.6337
+Precision: 0.6845 | Precision: 0.6168
+Recall:    0.7309 | Recall:    0.6777
+F1:        0.7070 | F1:        0.6458
+
+**SVM**
+Training          | Testing
+----------------- | -------------
+Accuracy:  0.6727 | Accuracy:  0.6491
+Precision: 0.6389 | Precision: 0.6223
+Recall:    0.7549 | Recall:    0.7327
+F1:        0.6921 | F1:        0.6730
 
 <br>
 
