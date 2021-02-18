@@ -1,6 +1,5 @@
 <p>
   <img src="images/christian-wiediger-rymh7EZPqRs-unsplash.jpg">
-  <br>
 </p>
 
 # Helping Amazon Reviewers Write More Helpfully
@@ -17,21 +16,16 @@ This project asks what if, instead, Amazon could assess review helpfulness autom
 Given a set of reviews for a particular product category, classify the reviews according to their helpfulness, with helpfulness defined as whether a review’s ratio of helpful to unhelpful votes is above or below the median ratio for all of that product category’s reviews.
 
 ## Data
-Amazon maintains a [publicly accessible database](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) with twenty years of product reviews, by product category, ranging from 1996 through 2015. The dataset includes review texts as well as metadata (star rating, product id, review date, helpful votes, etc.). The figures and results shown here use reviews for products in the "luggage" category. Changing product categories has a negligible impact.
+Amazon maintains a [publicly accessible database](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) with twenty years of product reviews, by product category, ranging from 1996 through 2015. The dataset includes review texts as well as metadata (star rating, product id, review date, helpful votes, etc.). The figures and results shown here use reviews for products in the "luggage" category. Changing product categories has a negligible impact. Due to volume restrictions, the dataset is not included within the github repo.
 
 ## Process
-1. Data preparation*
-    1. Drop junk data, set review date to datetime object, and define target label as helpful/unhelpful ratio
-    2. Tokenize text, drop stopwords, and normalize vocabulary for TF-IDF
-    3. Extract textual and con-textual features
+To analyze the data from vantages, I extract 20 lexical, syntactic, structural, and contextual features.
 
-2. EDA
-    1. Visualize helpful/unhelpful vocabularies' word frequencies
+The lexical features consist of unigrams (single words) and bigrams (pairs of words) taken from the text. I filter these using a list of common English words and further cull them by dropping the top 10% most frequently found terms across the review texts (frequently used terms contain less information to distinguish two classes of texts). I normalize the text using lemmatization, meaning to reduce words to their root lemmas, although there is not much benefit as opposed to stemming (simply reducing words to their stems). Finally, I quantify the text using TF-IDF vectorization, meaning the frequency of each term multiplied by the log of the inverse document frequency (the number of documents that include the term divided by the total number of documents), in order to compute the data.
 
-3. Modelling
-    1. Combine TF-IDF vectors with extracted features and split train and test sets
-    2. Optimize random forest and XGBoost classifiers with gridsearch
-    3. Fit and predict on classifiers
+The syntactic features include noun, verb, adjective, and adverb frequencies, which I determine through POS tagging, and the structural features include the quantities and frequencies of characters, words, sentences, exclamations, and questions.
+
+I also augment these textual features with contextual features extracted from review metadata to augment the textual analysis. After vectorizing the unigrams and bigrams, I concatenate the resulting sparse matrix with the syntactic, structural, and contextual features, and pass the combined featureset to three classification models: random forest, XGBoost, and support vector machines. My pipeline includes gridsearches to optimize each model's hyperparameters.
 
 ## Results
 **RANDOM FOREST**
