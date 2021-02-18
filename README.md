@@ -53,7 +53,7 @@ Recall:    0.7549 | Recall:    0.7327
 F1:        0.6921 | F1:        0.6730
 
 ## Next Steps
-Words depend on other words for meaning. Bigrams (or n-grams) allow random forests and XGBoost to partially capture this dependence for pairs (or larger sets) of adjoining words, but words at one end of a sentence can depend just as much on words at the other end for meaning as those in closer proximity.
+Words depend on other words for meaning. Bigrams (or n-grams) allow machine learning models to partially capture this dependence for pairs (or larger sets) of adjoining words, but words at one end of a sentence can depend just as much on words at the other end for meaning as those in closer proximity.
 
 Bidirectional LSTM recurrent neural networks with self attention are promising options for next steps better suited to the task of classifying language in order to predict a review's helpfulness.
 
@@ -68,6 +68,7 @@ Description of the structure of the repository and its contents:
 ├── data_processing.ipynb               <- cleaning and feature extraction
 ├── eda.ipynb                           <- visualization and analysis
 ├── modelling.ipynb                     <- tf-idf classification models
+├── presentation.pdf                    <- presentation deck
 └── README.md                           <- repo overview (what you are reading!)👀
 ```
 
