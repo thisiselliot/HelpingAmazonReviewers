@@ -25,7 +25,7 @@ The lexical features consist of unigrams (single words) and bigrams (pairs of wo
 
 The syntactic features include noun, verb, adjective, and adverb frequencies, which I determine through POS tagging, and the structural features include the quantities and frequencies of characters, words, sentences, exclamations, and questions.
 
-I also augment these textual features with contextual features extracted from review metadata to augment the textual analysis. After vectorizing the unigrams and bigrams, I concatenate the resulting sparse matrix with the syntactic, structural, and contextual features, and pass the combined featureset to three classification models: random forest, XGBoost, and support vector machines. My pipeline includes gridsearches to optimize each model's hyperparameters.
+I also augment these textual features with contextual features extracted from review metadata. After vectorizing the unigrams and bigrams, I concatenate the resulting sparse matrix with the syntactic, structural, and contextual features, and pass the combined featureset to three classification models: random forest, XGBoost, and support vector machines. My pipeline includes gridsearches to optimize each model's hyperparameters.
 
 ## Results
 **RANDOM FOREST**
