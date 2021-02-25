@@ -2,7 +2,7 @@
   <img src="images/christian-wiediger-rymh7EZPqRs-unsplash.jpg">
 </p>
 
-# Helping Product Reviews be more Helpful
+# Helping Product Reviews Be More Helpful
 **Author**: Elliot Macy
 
 <br>
